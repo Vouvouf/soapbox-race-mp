@@ -163,7 +163,7 @@ public class SbrwParser {
 	public String getChannel() {
 		if (isOk()) {
 			byte[] channelName = new byte[15];
-			System.arraycopy(channelInfo, 2, channelName, 0, 15);
+			System.arraycopy(channelInfo, 8, channelName, 0, 15);
 			String channelStr = new String(channelName).trim();
 			channelName = null;
 			return channelStr;
